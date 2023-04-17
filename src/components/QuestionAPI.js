@@ -9,7 +9,7 @@ function QuestionAPI() {
   setHint,setPortion,setQuestion}=useAPIContext()
    console.log("id",id) 
   return (
-    <div className='container'>
+    <div className='container'> 
 
         <button className='GoBackBtn'><Link  to='/'><BsArrowLeft/> Take Quiz</Link></button>
         <h4 className='q_number'>Question number:  <span className="id_num"> {id}</span></h4>

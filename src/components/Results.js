@@ -3,8 +3,19 @@ import React from 'react'
 import {AiOutlineCheck} from "react-icons/ai"
 import {RxCross2} from "react-icons/rx"
 import tick from "../images/tick.png"
+import { Link } from 'react-router-dom'
+import { BsArrowLeft } from 'react-icons/bs'
+
 const Results = ({grade,data}) => {
+  function reload(){
+    window.location.reload()
+    }
     return (
+     <>
+   
+      <Link  className='GoBackBtn '  onClick={reload}><BsArrowLeft/> Take Quiz Again</Link>
+      
+     
     <div className="result-container">
       <div className="gradetotal">
         <img className='tickimage' src={tick} alt="" />
@@ -27,6 +38,7 @@ const Results = ({grade,data}) => {
          })}
          
     </div>
+    </> 
   )
 }
 

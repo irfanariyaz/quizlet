@@ -375,20 +375,19 @@ justify-content: right;
   border: transparent;
   text-transform: uppercase;
   font-weight: 500;
-  
+  text-decoration: none;
+  background: #97d8ea;
+  color: rgb(8, 1, 1);
   
 }
 .GoBackBtn >a{
   text-decoration: none;
-  color: rgb(203, 25, 25);
+  /* color: rgb(69, 38, 38); */
 }
-.GoBackBtn >a:hover{
-  color:  rgb(203, 25, 25);
 
-}
+
 .GoBackBtn:hover{
-background: #e0e2e4;
-border: 1px solid   rgb(203, 25, 25,.3);
+background: #20c8f6;
 }
 .rightArrow{
  
@@ -405,6 +404,13 @@ border: 1px solid   rgb(203, 25, 25,.3);
     justify-content: space-between;
   }
   .options{
-  grid-template-columns:repeat(auto-fill, minmax(400px, 1fr));   
+  grid-template-columns:1fr 1fr; 
+  /* repeat(auto-fill, minmax(400px, 1fr))   */
 }
+}
+
+.takeQuizAgain{
+  text-decoration: none;
+  color: #0b0106;
+  cursor: pointer;
 }

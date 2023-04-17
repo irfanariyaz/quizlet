@@ -31,9 +31,11 @@ class QuestionViewSet(viewsets.ModelViewSet):
 
         for option_data in options_data:
             option = OptionsSerializer(data=option_data)
+            print("option b4 saving",option)
             if option.is_valid():
-                option = option.save()
+                option=option.save()
                 options.append(option)
+                print(option,options)
         
         question = Question.objects.create(id=id,question=question, portion=portion, hint=hint)
         question.options.set(options)
