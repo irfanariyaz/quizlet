@@ -1,8 +1,11 @@
 import { createContext,useContext,useEffect,useState } from "react";
 import { useGlobalContext } from "./DataContext";
 const APIContext = createContext()
+import { Navigate } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export const APIProvider=({children})=>{
+  const navigate = useNavigate();
     const {questNum}=useGlobalContext()
     const [question, setQuestion] = useState('');
     const [option, setOption] = useState(
@@ -38,8 +41,7 @@ export const APIProvider=({children})=>{
       
       ).catch(err=>console.log(err))
         
-      window.location.reload()
-    
+      navigate('/')
     }
   
     return(
