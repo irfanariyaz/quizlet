@@ -29,7 +29,7 @@ export const APIProvider=({children})=>{
         ]
         
         const data={id:id,question:question,options:optionArray,portion:portion,hint:hint}
-      const url="http://localhost:8000/api/questions/"
+      const url="https://quizlet-backend.onrender.com/api/questions/"
       fetch(url,{method: "POST",
       headers: {
              'Content-type': 'application/json',
