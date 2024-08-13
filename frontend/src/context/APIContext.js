@@ -1,8 +1,9 @@
 import { createContext,useContext,useEffect,useState } from "react";
 import { useGlobalContext } from "./DataContext";
-const APIContext = createContext()
-import { Navigate } from "react-router-dom";
+
 import { useNavigate } from 'react-router-dom';
+const APIContext = createContext()
+
 
 export const APIProvider=({children})=>{
   const navigate = useNavigate();
