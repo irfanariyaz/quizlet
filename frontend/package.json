@@ -20,6 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "https://quizlet-flf1.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
